@@ -1,0 +1,197 @@
+:root {
+    --primary: #1b5e20;
+    /* Earthy deep green */
+    --primary-soft: #A5D6A7;
+    /* Light herbal green */
+    --accent: #F0F4C3;
+    /* Calm neutral */
+    --muted: #6b705c;
+    --glass: rgba(255, 255, 255, 0.85);
+    --card-radius: 14px;
+}
+
+html,
+body {
+
+    overflow-x: hidden;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #233;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #fff;
+}
+
+
+/* ---------- Navbar ---------- */
+.navbar {
+    transition: background-color .35s ease, box-shadow .35s ease;
+    font-weight: 600;
+}
+
+.navbar .navbar-brand img {
+    height: 36px;
+    border-radius: 6px;
+}
+
+.navbar.sticky-on {
+    background: var(--primary);
+    box-shadow: 0 8px 24px rgba(27, 94, 32, 0.12);
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.navbar .nav-link.light {
+    color: var(--primary) !important;
+}
+
+/* Transparent navbar on top */
+.navbar.transparent {
+    background: transparent;
+}
+
+.navbar.transparent .nav-link {
+    color: #fff !important;
+}
+
+/* ---------- Section titles ---------- */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 1.25rem;
+    font-size: 1.6rem;
+}
+
+.lead-soft {
+    color: #475;
+    font-size: 1rem;
+}
+
+/* ---------- Card styles ---------- */
+.card-soft {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
+    border-radius: var(--card-radius);
+    box-shadow: 0 10px 30px rgba(27, 94, 32, 0.06);
+    border: none;
+}
+
+/* ---------- Doctors slider ---------- */
+.doctor-card {
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1.25rem;
+    background: linear-gradient(180deg, #fff, #fbfff9);
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(12, 50, 22, 0.12);
+}
+
+.doctor-card img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 6px solid rgba(165, 214, 167, 0.15);
+}
+
+/* For multiple cards in one carousel slide: use flex-wrap and gap */
+.doctor-slide {
+    display: flex;
+    gap: 1.1rem;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+    /* makes them black */
+}
+
+/* Branch */
+.branch-card {
+    transition: 0.3s ease;
+}
+
+.branch-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Reviews ---------- */
+.review-card {
+    border-radius: 12px;
+    padding: 1rem;
+    background: linear-gradient(180deg, #fff, #fbfff9);
+    box-shadow: 0 8px 24px rgba(11, 66, 27, 0.06);
+    height: 100%;
+}
+
+.stars {
+    color: #f1c40f;
+    font-size: 1.05rem;
+}
+
+/* WhatsApp Button */
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    text-decoration: none;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: linear-gradient(180deg, #082b12, #0d4019);
+    color: #e8f7ea;
+    padding: 2.0rem 0;
+}
+
+footer a {
+    color: #d9f0d9;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    margin-right: .4rem;
+}
+
+/* small tweaks */
+.badge-soft {
+    background: var(--primary-soft);
+    color: var(--primary);
+    font-weight: 600;
+    border-radius: 999px;
+    padding: .35rem .6rem;
+}
